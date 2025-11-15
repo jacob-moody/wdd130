@@ -63,7 +63,9 @@ header{
 #hero-img{
     width: 100%;
 }
-
+#faqhero-img{
+    width: 100%;
+}
 .button-box {
     text-align: center;
 }
@@ -165,6 +167,7 @@ footer{
     justify-content: space-around;
     align-items: center;
 
+
 }
 
 footer a{
@@ -233,6 +236,65 @@ footer .social img{
     grid-row: 5/8;
     z-index: 1;
     box-shadow: 5px 5px 10px #6f7364;
+}
+.faq-title{
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+
+}
+.faq-title h2 {
+    display:inline-block;
+    background-color: #1E6091;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.faq-main {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 30px; 
+    padding: 20px; 
+}
+.faq1 {
+    grid-column: 1/6;
+    width: 86%;           
+    margin: 30px auto;
+    margin-bottom: 5px;         
+    padding: 20px 30px;          
+    background-color: #52B69A ;  
+    border-left: 7px solid #1E6091;  
+    border-radius: 10px;     
+    box-shadow: 5px 5px 10px #6f7364; 
+    text-align: left; 
+    color: white;
+}
+.faq-feedback1 {
+    grid-column: 3/6;
+    width: 60% ;
+    height: 50%;
+    bottom: 15px;
+    right: 15px;
+    background-color: #52B69A;
+    border-left: 7px solid #1E6091;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6f7364;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.feedback-buttons {
+    display: flex;
+    gap: 10px;
+}
+.feedback-buttons button:hover {
+    transform: scale(1.2);
+    background-color: #B5E48C; 
+    color: #1E6091;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
