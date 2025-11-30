@@ -1,175 +1,146 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
-:root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #344E41   ;
-  --secondary-color: #3A5A40 ;
-  --accent1-color: #A3B18A;
-  --accent2-color: #DAD7CD;
-
-  /* change the values below to your chosen font(s) */
-  --heading-font: "Times";
-  --paragraph-font: Times, Helvetica, sans-serif;
-
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #344E41;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #344E41; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #A3B18A  ;
-  --nav-link-color: #344E41;
-  --nav-background-color: #A3B18A;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
-}
-
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
+    font-family: "Lato", sans-serif;
+    background-color: #DAD7CD;
+    color: #344E41;
+    margin: 0;
+    line-height: 1.5;
 }
-img {
-  display: block;
-  margin: 0 auto;
+
+#content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; /* header, main, resume, footer */
+    gap: 40px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
+
+/* HEADER */
 header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
 }
 
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
-}
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: #999;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
-
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
+.logo {
+    width: 100px;
+    opacity: 0.9;
 }
 
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
 }
-nav  {
-  list-style-type: none;
-  display: flex;
 
-}
 nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #344E41;
+    font-size: 18px;
+    border: 1px solid #A3B18A;
+    border-radius: 4px;
+    background-color: #DAD7CD;
+    transition: 0.2s;
+}
 
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+    background-color: #A3B18A;
+    color: #fff;
+    border-color: #3A5A40;
 }
 
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-.sitemap > div {
-
-  text-align: center;
-
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+/* HERO SECTION */
+.home-title {
+    font-family: "IM Fell French Canon SC", serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 12px;
+    color: #3A5A40;
+    border-bottom: 3px solid #A3B18A;
 }
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
+#hero-msg p {
+    background-color: #fff;
+    padding: 20px 30px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    border: 1px solid #A3B18A;
+    border-radius: 6px;
 }
 
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+/* ABOUT ME + HEADSHOT */
+.about-me {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* text 2x, image 1x */
+    gap: 25px;
+    align-items: stretch; /* ensures text and headshot same height */
 }
 
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
+.about-me h2 {
+    grid-column: 1 / -1;
+    font-family: "IM Fell French Canon SC", serif;
+    font-size: 24px;
+    background-color: #A3B18A;
+    padding: 10px 12px;
+    border-left: 5px solid #3A5A40;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+/* About Me Text */
+.about-me p {
+    background-color: #fff;
+    padding: 18px;
+    border: 1px solid #A3B18A;
+    border-radius: 6px;
+    height: 100%;
+    grid-row: 1/3;
+}
+
+/* Headshot */
+#headshot-box {
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headshot-img {
+    max-height: 100%;
+    width: auto;
+    border-radius: 6px;
+    border: 2px solid #A3B18A;
+    object-fit: cover;
+}
+
+#resume-container {
+    display: flex;             /* makes centering easy */
+    justify-content: center;   /* horizontally center the image */
+    margin-top: 35px;
+}
+
+#resume {
+    width: 80%;        /* scales relative to container */
+    max-width: 500px;  /* absolute maximum width */
+    border: 2px solid #A3B18A;
+    border-radius: 6px;
+    display: block;
+}
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: #344E41;
+    color: #DAD7CD;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
 }

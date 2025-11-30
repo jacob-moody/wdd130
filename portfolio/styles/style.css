@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+body {
+    font-family: "IM Fell French Canon SC", "Lato";
+    background-color: #DAD7CD;
+    color: #344E41;           
+    line-height: 1.5;
+}
+
+#content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.logo {
+    width: 100%;
+    opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    padding: 10px 30px;
+    border: 1px solid #A3B18A;       
+    text-decoration: none;
+    color: #344E41;                  
+    font-size: 18px;
+    background-color: #DAD7CD;       
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #A3B18A;       
+    color: white;
+    border-color: #3A5A40;           
+}
+
+
+.home-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 12px;
+    color: #3A5A40;
+    border-bottom: 3px solid #A3B18A;    
+}
+
+#hero-msg p {
+    background-color: white;
+    font-family: "Lato";
+    padding: 18px 25px;
+    margin: 0 auto 40px auto;
+    max-width: 800px;
+    border: 1px solid #A3B18A;
+    border-radius: 6px;
+    color: #344E41;
+}
+
+.about-me h2 {
+    font-size: 22px;
+    font-family: "IM Fell French Canon SC";
+    background-color: #A3B18A;  
+    padding: 10px 12px;
+    border-left: 5px solid #3A5A40;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.about-me-and-photo {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.about-me p {
+    flex: 2;
+    font-family: "Lato";
+    background-color: white;
+    padding: 18px;
+    border: 1px solid #A3B18A;
+    border-radius: 6px;
+    color: #344E41;
+}
+
+#headshot-box {
+    flex: 1;
+    max-width: 300px;
+}
+
+#headshot-img {
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid #A3B18A;
+}
+
+#resume {
+    width: 100%;
+    margin-top: 35px;
+    border: 2px solid #A3B18A;
+    border-radius: 6px;
+}
+
+footer {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #344E41;  
+    color: #DAD7CD;             
+    border-radius: 6px;
+    font-size: 16px;
+}
