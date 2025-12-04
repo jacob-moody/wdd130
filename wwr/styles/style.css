@@ -3,22 +3,30 @@
     max-width: 1600px;
     margin: 0 auto;
 }
+nav {
+    display: flex;
+    justify-content: space-around; /* space out the links themselves */
+    align-items: center;
+    background-color: #1E6091;
+}
 
-nav a{
-    text-align: center;
+nav a {
+    display: flex;          /* align icon + text */
+    align-items: center;    /* vertically center icon & text */
+    gap: 8px;               /* space between icon and text */
     color: white;
-    text-decoration: 0;
-    padding: 35px;
-    display: flex;
-    justify-content: space-around;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: background-color 0.3s, color 0.3s;
 }
-nav a:hover{
-    background-color:#52B69A ;
+
+nav a i {
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: #52B69A;
     color: purple;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
 }
 header{
     display: grid;
