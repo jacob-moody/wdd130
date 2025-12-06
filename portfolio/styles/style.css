@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 body {
-    font-family: "IM Fell French Canon SC", "Lato";
+    font-family: "Times New Roman";
     background-color: #DAD7CD;
     color: #344E41;           
     line-height: 1.5;
@@ -58,7 +57,7 @@ nav a:hover {
 
 #hero-msg p {
     background-color: white;
-    font-family: "Lato";
+    font-family: "Times New Roman";
     padding: 18px 25px;
     margin: 0 auto 40px auto;
     max-width: 800px;
@@ -69,7 +68,7 @@ nav a:hover {
 
 .about-me h2 {
     font-size: 22px;
-    font-family: "IM Fell French Canon SC";
+    font-family: "Times New Roman";
     background-color: #A3B18A;  
     padding: 10px 12px;
     border-left: 5px solid #3A5A40;
@@ -85,7 +84,7 @@ nav a:hover {
 
 .about-me p {
     flex: 2;
-    font-family: "Lato";
+    font-family: "Times New Roman";
     background-color: white;
     padding: 18px;
     border: 1px solid #A3B18A;
