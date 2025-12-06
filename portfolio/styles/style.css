@@ -120,3 +120,53 @@ footer {
     border-radius: 6px;
     font-size: 16px;
 }
+.render-title {
+    font-size: 28px;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 15px;
+    color: #3A5A40;
+    border-bottom: 3px solid #A3B18A;
+}
+.render-subtitle {
+    font-size: 22px;
+    font-family: "Times New Roman";
+    background-color: #A3B18A;  
+    padding: 10px 12px;
+    border-left: 5px solid #3A5A40;
+    margin-bottom: 12px;
+    color: white;
+}
+.render-description {
+    width: 95%;
+    margin: 0 auto 30px auto;
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid #3A5A40;
+    border-radius: 4px;
+    line-height: 1.6;
+    color: #344E41;
+}
+.renders-row {
+    width: 95%;              
+    margin: 20px auto 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.renders-row img {
+    width: 50%;            
+    max-width: 100%;         
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #A3B18A;
+}
+.section-title {
+    font-size: 22px;
+    font-family: "Times New Roman";
+    background-color: #A3B18A;  
+    padding: 10px 12px;
+    border-left: 5px solid #3A5A40;
+    margin-bottom: 12px;
+    color: white;
+}
