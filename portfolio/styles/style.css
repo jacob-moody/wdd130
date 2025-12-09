@@ -170,3 +170,45 @@ footer {
     margin-bottom: 12px;
     color: white;
 }
+.models-title {
+    font-size: 28px;
+    text-align: center;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    color: #3A5A40;
+    border-bottom: 3px solid #A3B18A;
+}
+
+.models-section-title {
+    font-size: 20px;
+    font-family: "Times New Roman";
+    background-color: #A3B18A;
+    padding: 10px 12px;
+    border-left: 5px solid #3A5A40;
+    margin: 30px 0 15px 0;
+    color: white;
+}
+
+.models-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+    align-items: start; 
+}
+
+.models-description-box {
+    background-color: white;
+    border: 1px solid #3A5A40;
+    padding: 18px 20px;
+    border-radius: 4px;
+    line-height: 1.6;
+    color: #344E41;
+}
+
+.models-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid #A3B18A;
+    border-radius: 6px;
+}
